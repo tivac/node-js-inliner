@@ -31,7 +31,7 @@ inliner(stream, { root : "/fooga/wooga", size : 1024 }, function(err, text) {
   * `err` {Error | null}
   * `text` {Buffer} Rewritten text
 
-### Options
+#### Options
 
 * `root` {String} location on disk to use as the root of URLs. Default is `process.cwd()`.
 * `size` {Number} maximum size of files to inline. Default is `1024`.
