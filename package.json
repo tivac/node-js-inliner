@@ -19,13 +19,15 @@
     "mocha": "~1.13.0",
     "istanbul": "~0.1.37"
   },
-  "dependencies": {},
+  "dependencies": {
+    "slide": "~1.1.5"
+  },
   "engines": {
     "node": ">=0.10"
   },
   "directories": {
     "test": "tests",
-    "lib" : "lib"
+    "lib": "lib"
   },
   "keywords": [
     "html",
