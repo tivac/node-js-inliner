@@ -1,0 +1,1 @@
+var wooga = "I am wooga.js";
