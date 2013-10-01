@@ -2,7 +2,8 @@
 
 "use strict";
 
-var assert  = require("assert"),
+var fs      = require("fs"),
+    assert  = require("assert"),
     path    = require("path"),
 
     inliner = require("../lib/inliner");
@@ -10,18 +11,16 @@ var assert  = require("assert"),
 describe("JS Inliner", function() {
     describe("Main Module", function() {
         it("should something something something", function(done) {
-            var file = "./test/specimens/test.ejs",
-                root = path.dirname(file);
+            var file   = "./test/specimens/test.ejs",
+                stream = fs.createReadStream(file, { encoding : "utf8" }),
+                root   = path.dirname(file);
             
-            inliner(file, { root : root }, function(err, results) {
+            inliner(stream, { root : root }, function(err, results) {
                 var js;
                 
                 assert.ifError(err);
                 
-                assert.equal(results.length, 1);
-                assert.equal(results[0].file, file);
-                
-                js = results[0].data.toString("utf8");
+                js = results.toString("utf8");
                 
                 assert(js.indexOf("src=\"wooga.js\"") === -1);
                 assert(js.indexOf("src=\"/booga/fooga.js\"") === -1);

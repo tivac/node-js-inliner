@@ -22,8 +22,7 @@
   "dependencies": {
     "concat-stream": "~1.0.1",
     "trumpet": "~1.6.2",
-    "jsuri": "~1.2.2",
-    "async": "~0.2.9"
+    "jsuri": "~1.2.2"
   },
   "engines": {
     "node": ">=0.10"

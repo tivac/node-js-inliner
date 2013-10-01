@@ -12,25 +12,24 @@ Inline tiny JS files into your markup without doing something gnarly.
 ```javascript
 var inliner = require("js-inliner");
 
-inliner(file, { root : "/fooga/wooga", size : 1024 }, function(err, results) {
+inliner(stream, { root : "/fooga/wooga", size : 1024 }, function(err, text) {
     if(err) {
         throw new Error(err);
     }
     
-    results.forEach(function(details) {
-        fs.writeFileSync(details.file, details.data);
-    });
+    console.log(text.toString());
 });
 ```
 
 ## API ##
 
-### inliner(file, [options], cb)
+### inliner(stream, [options], cb)
 
-* `file` {String} Pattern to be matched
+* `stream` {Stream} Readable stream to parse
 * `options` {Object}
 * `cb` {Function}
   * `err` {Error | null}
+  * `text` {Buffer} Rewritten text
 
 ### Options
 
