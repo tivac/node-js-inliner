@@ -12,11 +12,14 @@ Inline tiny JS files into your markup without doing something gnarly.
 ```javascript
 var inliner = require("js-inliner");
 
-inliner(file, { root : "/fooga/wooga", size : 1024 }, function(err) {
+inliner(file, { root : "/fooga/wooga", size : 1024 }, function(err, results) {
     if(err) {
         throw new Error(err);
     }
-}
+    
+    results.forEach(function(details) {
+        fs.writeFileSync(details.file, details.data);
+    });
 });
 ```
 
