@@ -1,6 +1,6 @@
 {
   "name": "js-inliner",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Inline <script> tags under the specified size",
   "main": "./lib/inliner.js",
   "scripts": {
