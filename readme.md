@@ -4,7 +4,7 @@ JS Inliner
 Inline tiny JS files into your markup without doing something gnarly.
 
 [![Build Status](https://travis-ci.org/tivac/node-js-inliner.png?branch=master)](https://travis-ci.org/tivac/node-js-inliner)
-[![NPM version](https://badge.fury.io/js/node-js-inliner.png)](http://badge.fury.io/js/node-js-inliner)
+[![NPM version](https://badge.fury.io/js/js-inliner.png)](http://badge.fury.io/js/js-inliner)
 [![Dependency Status](https://gemnasium.com/tivac/node-js-inliner.png)](https://gemnasium.com/tivac/node-js-inliner)
 
 ## Usage ##
