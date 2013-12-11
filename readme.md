@@ -1,4 +1,4 @@
-JS Inliner [![Build Status](https://travis-ci.org/tivac/node-js-inliner.png?branch=master)](https://travis-ci.org/tivac/node-js-inliner) [![NPM version](https://badge.fury.io/js/js-inliner.png)](http://badge.fury.io/js/js-inliner) [![Dependency Status](https://gemnasium.com/tivac/node-js-inliner.png)](https://gemnasium.com/tivac/node-js-inliner)
+JS Inliner [![Build Status](https://travis-ci.org/tivac/node-js-inliner.png?branch=master)](https://travis-ci.org/tivac/node-js-inliner) [![NPM version](https://badge.fury.io/js/js-inliner.png)](http://badge.fury.io/js/js-inliner) [![Dependency Status](https://gemnasium.com/tivac/node-js-inliner.png)](https://gemnasium.com/tivac/node-js-inliner) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tivac/node-js-inliner/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ==========
 
 Inline tiny JS files into your markup without doing something gnarly.
